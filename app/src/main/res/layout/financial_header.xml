@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:background="#ffffff">
+
+        <View
+            android:id="@+id/struts"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="#D7D7D7"></View>
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/todayIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/struts"
+            android:singleLine="true"
+            android:text="￥754.8"
+
+            android:textColor="#333333"
+            android:textSize="28sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/todayIncome"
+            android:layout_alignLeft="@id/todayIncome"
+            android:text="今日预估收益(2018.12.18)"
+            android:textSize="12sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/nextIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/struts"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:text="￥754.8"
+            android:textColor="#333333"
+            android:textSize="28sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nextIncome"
+            android:layout_alignLeft="@id/nextIncome"
+            android:layout_toRightOf="@id/struts"
+            android:text="下次到账"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="7dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="7dp"
+        android:text="注意：每笔款项由易宝汇出，一般在一个工作日后到账，若遇到节假日则顺延一个工作日到账，请注意查收；金额低于50元可能银行不会有到账短信提醒，请注意。"
+        android:textColor="#DA8F44"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:text="历史账单"
+            android:textColor="#404040"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/showProfitDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="查看全部"
+            android:textColor="#929292"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="12dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:background="#EFF0F2"></View>
+
+
+</LinearLayout>
